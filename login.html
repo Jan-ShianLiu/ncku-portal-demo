@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>成功入口登入｜介面模擬</title><link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+<div class="login-art" role="img" aria-label="成功大學校園與資安宣導背景"></div>
+<main class="login-column">
+<img class="portal-logo" src="assets/portal-logo.png" alt="成功入口 Cheng Kung Portal">
+<form id="demo-login" autocomplete="off">
+<label class="account-label" for="account">請輸入員工識別證號或學號<br>Enter your Employee ID or Student ID</label>
+<div class="input-row"><span class="input-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm-8 9v-3c0-3 4-5 8-5s8 2 8 5v3z"/></svg></span><input id="account" type="text" placeholder="員工識別證號或學號(Employee ID or Student ID)" aria-label="員工識別證號或學號" autocomplete="off"></div>
+<div class="input-row"><span class="input-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 10V7a6 6 0 0 1 12 0v3h2v12H4V10zm3 0h6V7a3 3 0 0 0-6 0zm2 4v4h2v-4z"/></svg></span><input id="password" type="password" placeholder="密碼" aria-label="密碼" autocomplete="new-password"><button class="password-toggle" type="button" aria-label="顯示密碼" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3-6 10-6 10 6 10 6-3 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+<button class="sign-in" type="submit">登入</button>
+<p id="login-status" role="status" aria-live="polite" hidden></p>
+</form>
+<section class="first-login" id="first-login">
+<h2>第一次登入</h2>
+<p>預設密碼：身分證後四碼+生日月日四碼</p>
+<p>外籍生：學生證後四碼+生日月日四碼(mmdd)</p>
+<p>密碼過期：請點選[忘記密碼]重新設定</p>
+<button class="forgot" type="button" data-forgot>忘記密碼</button>
+<hr>
+<h2>First login</h2>
+<p>Default password: Last 4 digits of ID + 4 digits of date of birth</p>
+<p>International student: Last 4 digits of student ID + 4 digits of date of birth (mmdd)</p>
+<p>Password expired: Please click [Forgot Password] to reset</p>
+<button class="forgot" type="button" data-forgot>Forgot password</button>
+</section>
+<a class="back-link" href="index.html">← 返回入口頁</a>
+<footer class="login-footer">Copyright © National Cheng Kung University. All rights reserved.<br>本頁僅供介面模擬，請使用虛構資料。</footer>
+</main>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body></html>

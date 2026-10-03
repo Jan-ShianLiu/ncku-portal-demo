@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>學籍系統選單｜介面模擬</title><link rel="stylesheet" href="styles.css">
+</head>
+<body class="menu-page">
+<header class="system-banner"><img src="assets/system-logo.png" alt="成功大學"><h1>國立成功大學學籍系統</h1></header>
+<main class="system-menu" aria-label="學籍系統選單">
+<a href="record.html"><img src="assets/query-icon.png" alt="">學籍資料查詢</a>
+<a href="#" data-demo-link><img src="assets/query-icon.png" alt=""><span data-academic="course-query">115學年度第1學期選課資料查詢(含學雜費繳費&amp;退費資訊)</span></a>
+<a href="#" data-demo-link><img src="assets/query-icon.png" alt="">歷年成績資料查詢</a>
+</main>
+<a href="index.html" class="system-logout">&lt;&lt;登出系統&gt;&gt;</a>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="academic.js"></script>
+<script src="app.js"></script>
+</body></html>
